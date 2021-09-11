@@ -197,9 +197,6 @@ export default {
       anchor.click();
     },
   },
-  mounted() {
-    this.draw();
-  },
 };
 </script>
 
