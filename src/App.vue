@@ -31,11 +31,15 @@ export default {
         fontColor: process.env.NODE_ENV === 'development'
           ? 'red'
           : 'white',
+        shadowColor: process.env.NODE_ENV === 'development'
+          ? 'purple'
+          : 'grey',
+        shadowBlur: 20,
         lineSpacing: 6,
         gridSpacing: 52,
         gridLineWidth: 16,
         lines: [
-          'Watzmann',
+          'WATZMANN',
         ],
         gridLines: [
           new Date().toLocaleDateString(navigator.language, {

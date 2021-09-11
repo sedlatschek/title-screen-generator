@@ -182,6 +182,11 @@ export default {
 
       const title = this.makeTitle(this.value.lines, this.value.gridLines);
 
+      // apply shadow
+      ctx.shadowColor = this.value.shadowColor;
+      ctx.shadowBlur = this.value.shadowBlur;
+
+      // draw title
       ctx.drawImage(
         title,
         (canvas.width - title.width) / 2,

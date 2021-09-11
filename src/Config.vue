@@ -27,11 +27,26 @@
               min="1"
               label="Title Width"/>
           </v-col>
+        </v-row>
+        <v-row>
           <v-col>
             <v-text-field
               @input="$emit('input', tmp)"
               v-model="tmp.fontColor"
               label="Font Color"/>
+          </v-col>
+          <v-col>
+            <v-text-field
+              @input="$emit('input', tmp)"
+              v-model="tmp.shadowColor"
+              label="Shadow Color"/>
+          </v-col>
+          <v-col>
+            <v-text-field
+              @input="$emit('input', tmp)"
+              v-model="tmp.shadowBlur"
+              type="Number"
+              label="Shadow Blur"/>
           </v-col>
         </v-row>
         <v-row>
