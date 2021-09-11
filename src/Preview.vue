@@ -202,7 +202,13 @@ export default {
 
 <style scoped>
 .canvas {
-  background-color: white;
   width: 100%;
+  background-image:
+    linear-gradient(to right, rgba(250, 250, 250, 0.75), rgba(236, 236, 236, 0.75)),
+    linear-gradient(to right, black 50%, white 50%),
+    linear-gradient(to bottom, black 50%, white 50%);
+  background-blend-mode: normal, difference, normal;
+  background-size: 2em 2em;
+  background-repeat: repeat;
 }
 </style>
