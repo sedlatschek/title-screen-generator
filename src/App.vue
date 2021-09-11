@@ -5,18 +5,21 @@
         <preview :value="config"/>
         <config v-model="config"/>
       </v-main>
+      <foot/>
     </v-app>
   </div>
 </template>
 
 <script>
 import Config from './Config.vue';
+import Foot from './Foot.vue';
 import Preview from './Preview.vue';
 
 export default {
   name: 'App',
   components: {
     Config,
+    Foot,
     Preview,
   },
   data() {
