@@ -1,5 +1,10 @@
 <template>
-  <div class="text-center">
+  <div class="text-center px-5 pt-5">
+    <canvas
+      class="canvas"
+      ref="canvas"
+      width="3840"
+      height="2160"/>
     <v-btn
       class="ma-5"
       color="primary"
@@ -10,13 +15,8 @@
       class="ma-5"
       color="primary"
       @click.prevent="save">
-      Save Title
+      Save PNG
     </v-btn>
-    <canvas
-      class="canvas"
-      ref="canvas"
-      width="3840"
-      height="2160"/>
   </div>
 </template>
 

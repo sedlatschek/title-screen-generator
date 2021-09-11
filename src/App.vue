@@ -2,8 +2,8 @@
   <div id="app">
     <v-app>
       <v-main>
-        <config v-model="config"/>
         <preview :value="config"/>
+        <config v-model="config"/>
       </v-main>
     </v-app>
   </div>
@@ -25,18 +25,21 @@ export default {
         screenWidth: 3810,
         screenHeight: 2160,
         titleWidth: 2280,
-        fontColor: process.env.NODE_ENV === 'development' ? 'red' : 'white',
+        fontColor: process.env.NODE_ENV === 'development'
+          ? 'red'
+          : 'white',
         lineSpacing: 6,
         gridSpacing: 52,
         gridLineWidth: 16,
         lines: [
-          'Kampenwand',
-          'Watzmannüberschreitung',
-          'XYäddd',
-          'AS1234sdfa2sadfgasfdasfasdfsadf',
+          'Watzmann',
         ],
         gridLines: [
-          '11.09.2021',
+          new Date().toLocaleDateString(navigator.language, {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+          }),
           '1433 HM',
           '12,1 KM',
         ],
