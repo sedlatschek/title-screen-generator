@@ -118,7 +118,7 @@ export default {
         ctx.drawImage(text, left, this.value.gridSpacing / 2);
         left += text.width + this.value.gridSpacing;
         if (i < columns.length - 1) {
-          const height = fontSize + this.value.gridSpacing / 2 - this.value.gridLineWidth;
+          const height = fontSize + this.value.gridSpacing / 2 - this.value.gridLineWidth * 2;
           ctx.fillRect(left, 0, this.value.gridLineWidth, height);
           left += this.value.gridSpacing + this.value.gridLineWidth;
         }
