@@ -33,7 +33,7 @@ export default {
           : 'white',
         shadowColor: process.env.NODE_ENV === 'development'
           ? 'purple'
-          : 'grey',
+          : 'black',
         shadowBlur: 20,
         lineSpacing: 6,
         gridSpacing: 52,
