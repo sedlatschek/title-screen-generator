@@ -25,6 +25,7 @@ export default {
   data() {
     return {
       config: {
+        font: 'Segoe UI',
         screenWidth: 3810,
         screenHeight: 2160,
         titleWidth: 2280,

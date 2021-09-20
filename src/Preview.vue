@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     font(fontSize) {
-      return `${fontSize}px Segoe UI`;
+      return `${fontSize}px ${this.value.font}`;
     },
     createCanvas(additionalHeight = 0) {
       const canvas = window.document.createElement('canvas');

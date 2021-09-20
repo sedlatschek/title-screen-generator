@@ -32,6 +32,12 @@
           <v-col>
             <v-text-field
               @input="$emit('input', tmp)"
+              v-model="tmp.font"
+              label="Font"/>
+          </v-col>
+          <v-col>
+            <v-text-field
+              @input="$emit('input', tmp)"
               v-model="tmp.fontColor"
               label="Font Color"/>
           </v-col>
